@@ -5,6 +5,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 50;
 	&__wrapper {
 		max-width: 1250px;
 		display: flex;
@@ -41,7 +42,7 @@
 		position: absolute;
 		background: #fff;
 		z-index: 4;
-		left: 0;
+		left: -5%;
 		top: 31px;
 		width: 0;
 		height: 0;
@@ -51,12 +52,13 @@
 		opacity: 0;
 
 		&._active {
-			overflow-y: auto;
-			width: 100%;
+			overflow: auto;
+			width: 100vw;
 			transform: translate(0, 0);
 			opacity: 1;
 			height: auto;
-			padding: 40px 0 10px 0;
+			max-height: 100vh;
+			padding: 40px 5% 30px 5%;
 
 			display: block;
 		}

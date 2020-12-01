@@ -1,0 +1,61 @@
+.products-radar {
+	padding: 100px 0 150px 0;
+	background: url("../../images/system_img/radar/products/bg.svg") top right / contain no-repeat;
+
+	&__wrapper {
+		max-width: 1250px;
+		margin: 0 auto;
+
+		@media (max-width: $lg) {
+			max-width: 1150px;
+		}
+
+		@media (max-width: $md) {
+			max-width: 930px;
+		}
+
+		@media (max-width: $sm) {
+			max-width: 90%;
+		}
+
+		position: relative;
+	}
+
+	&__title-block {
+		max-width: 426px;
+		text-align: right;
+
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&__title {
+	}
+
+	&__text {
+		margin: 9px 0 0 0;
+		font-size: 15px;
+		line-height: 18px;
+	}
+
+	&__items {
+	}
+
+	&__item {
+		width: 312px;
+		height: 313px;
+		background: #ffffff;
+		box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+		border-radius: 7px;
+	}
+}
+.title {
+}
+.item-products {
+	&__img {
+	}
+
+	&__text {
+	}
+}
