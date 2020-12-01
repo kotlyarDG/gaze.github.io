@@ -1,0 +1,141 @@
+.business-radar {
+	background: url("../../images/system_img/radar/business/bg.svg") top left / cover no-repeat;
+	padding: 160px 0 0 0;
+	position: relative;
+
+	&__wrapper {
+		max-width: 1250px;
+		margin: 0 auto;
+
+		@media (max-width: $lg) {
+			max-width: 1150px;
+		}
+
+		@media (max-width: $md) {
+			max-width: 930px;
+		}
+
+		@media (max-width: $sm) {
+			max-width: 90%;
+		}
+	}
+
+	&__content {
+		width: 50%;
+	}
+
+	&__slider {
+	}
+
+	&__slide {
+	}
+
+	&__img {
+		position: absolute;
+		right: 0;
+		top: 160px;
+		width: 40vw;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__link-block {
+		position: absolute;
+		top: 12%;
+		left: 18%;
+
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+
+		img {
+			align-self: start;
+		}
+	}
+
+	&__text-link-block {
+		display: block;
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		width: 50%;
+		text-align: center;
+	}
+
+	&__text-link {
+		font-size: 15px;
+		line-height: 18px;
+		text-align: center;
+		letter-spacing: 0.055em;
+
+		color: #ffffff;
+
+		span {
+			font-weight: bold;
+		}
+	}
+
+	&__link {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 18px;
+		text-align: center;
+		display: inline-block;
+
+		color: #300e5e;
+		padding: 10px 30px;
+		background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ececec 100%);
+		box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.25);
+		border-radius: 8px;
+		margin: 15px 0 0 0;
+	}
+}
+
+.slide-business {
+	&__title {
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 34px;
+
+		color: #ffffff;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0.055em;
+
+		color: #ffffff;
+
+		margin: 15px 0 0 0;
+	}
+
+	&__images {
+		display: flex;
+		margin: 38px 0;
+	}
+
+	&__big-img {
+		flex: 0 1 66.6667%;
+	}
+
+	&__column-images {
+		flex: 0 1 33.3333%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__subtitle {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+
+		color: #ffffff;
+		margin: 23px 0 0 0;
+	}
+}
+.busines-radar {
+}

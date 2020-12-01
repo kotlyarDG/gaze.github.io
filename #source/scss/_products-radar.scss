@@ -1,6 +1,6 @@
 .products-radar {
 	padding: 100px 0 150px 0;
-	background: url("../../images/system_img/radar/products/bg.svg") top right / cover no-repeat;
+	background: url("../images/system_img/radar/products/bg.svg") top right / cover no-repeat;
 
 	&__wrapper {
 		max-width: 1250px;
@@ -39,7 +39,6 @@
 
 		@media (max-width: $xs) {
 			display: block;
-			// text-align: center;
 		}
 	}
 
