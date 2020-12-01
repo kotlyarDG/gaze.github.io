@@ -1,0 +1,62 @@
+// Обнуление
+@import "reset";
+
+// Подключение шрифтов
+@import "fonts";
+
+// Миксины
+
+// Адаптивный шрифт
+// Указать величину шрифта на минимальном экране и на макетном размере
+$maxWidth: 1280;
+@mixin adaptive-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+$lg: 1336px;
+$md: 1199px;
+$sm: 991px;
+$xs: 768px;
+
+input[placeholder] {
+	text-overflow: ellipsis;
+}
+input::-moz-placeholder {
+	text-overflow: ellipsis;
+}
+input:-moz-placeholder {
+	text-overflow: ellipsis;
+}
+input:-ms-input-placeholder {
+	text-overflow: ellipsis;
+}
+
+svg {
+	path {
+		fill: inherit;
+		stroke: inherit;
+	}
+	rect {
+		fill: inherit;
+		stroke: inherit;
+	}
+}
+
+// Общие стили
+html {
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+// Подключение общих блоков
+@import "blocks";
+
+// Header
+@import "header";
+
+// Footer
+@import "footer";
