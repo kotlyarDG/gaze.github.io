@@ -1,7 +1,26 @@
 .business-radar {
-	background: url("../../images/system_img/radar/business/bg.svg") top left / cover no-repeat;
-	padding: 160px 0 0 0;
+	background: url("../images/system_img/radar/business/bg.svg") top left / cover no-repeat;
+	padding: 160px 0 100px 0;
 	position: relative;
+
+	@media (max-width: $xs) {
+		padding: 100px 0 50px 0;
+	}
+
+	&__ellipse {
+		position: absolute;
+		left: 0;
+		bottom: 10%;
+		z-index: 0;
+
+		@media (max-width: 1400px) {
+			bottom: 50%;
+		}
+
+		@media (max-width: $xs) {
+			display: none;
+		}
+	}
 
 	&__wrapper {
 		max-width: 1250px;
@@ -22,9 +41,66 @@
 
 	&__content {
 		width: 50%;
+
+		@media (max-width: $md) {
+			width: 100%;
+		}
 	}
 
 	&__slider {
+		position: relative;
+		z-index: 1;
+
+		.slick-arrow {
+			font-size: 0;
+			display: block;
+			width: 11px;
+			height: 7px;
+			position: absolute;
+			bottom: -50px;
+		}
+		/* Стрелка влево */
+		.slick-arrow.slick-prev {
+			background: url("../images/system_img/radar/business/Vector-p.svg") center / contain no-repeat;
+			left: 0;
+		}
+		/* Стрелка вправо */
+		.slick-arrow.slick-next {
+			background: url("../images/system_img/radar/business/Vector-n.svg") center / contain no-repeat;
+			right: 0;
+		}
+		/* Стрелка не активная */
+		.slick-arrow.slick-disabled {
+		}
+		/* Точки (булиты) */
+		.slick-dots {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			bottom: -50px;
+			left: 50%;
+
+			transform: translate(-50%, 0);
+		}
+		.slick-dots li {
+			width: 4px;
+			height: 4px;
+			background: #ffffff;
+			opacity: 0.4;
+			margin: 0 13px;
+			border-radius: 50%;
+			transition: all 0.3s ease 0s;
+		}
+		/* Активная точка */
+		.slick-dots li.slick-active {
+			width: 7px;
+			height: 7px;
+			opacity: 1;
+		}
+		/* Элемент точки */
+		.slick-dots li button {
+			font-size: 0;
+		}
 	}
 
 	&__slide {
@@ -36,8 +112,21 @@
 		top: 160px;
 		width: 40vw;
 
-		img {
-			max-width: 100%;
+		@media (max-width: $md) {
+			position: relative;
+			right: 0;
+			top: 0;
+			width: auto;
+			height: auto;
+			margin: 50px 0 0 0;
+
+			> img {
+				display: none;
+			}
+		}
+
+		> img {
+			width: 100%;
 		}
 	}
 
@@ -51,6 +140,14 @@
 		height: 100%;
 		width: 100%;
 
+		@media (max-width: $md) {
+			position: static;
+
+			img {
+				display: none;
+			}
+		}
+
 		img {
 			align-self: start;
 		}
@@ -63,6 +160,15 @@
 		left: 25%;
 		width: 50%;
 		text-align: center;
+
+		@media (max-width: $md) {
+			position: static;
+			margin: 60px auto 0 auto;
+		}
+
+		@media (max-width: $xs) {
+			width: 100%;
+		}
 	}
 
 	&__text-link {
@@ -91,10 +197,17 @@
 		box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.25);
 		border-radius: 8px;
 		margin: 15px 0 0 0;
+		transition: transform 0.3s ease 0s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 }
 
 .slide-business {
+	display: flex;
+	flex-direction: column;
 	&__title {
 		font-weight: bold;
 		font-size: 28px;
@@ -116,16 +229,37 @@
 	&__images {
 		display: flex;
 		margin: 38px 0;
+
+		@media (max-width: $md) {
+			max-width: 80%;
+			align-self: center;
+		}
+
+		@media (max-width: $md) {
+			max-width: 100%;
+			align-self: center;
+			margin: 15px 0;
+		}
 	}
 
 	&__big-img {
-		flex: 0 1 66.6667%;
+		flex: 0 1 76%;
+
+		img {
+			max-width: 100%;
+			display: block;
+		}
 	}
 
 	&__column-images {
-		flex: 0 1 33.3333%;
+		flex: 0 1 24%;
 		display: flex;
 		flex-direction: column;
+
+		img {
+			max-width: 100%;
+			display: block;
+		}
 	}
 
 	&__subtitle {
