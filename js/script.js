@@ -9,4 +9,16 @@ $(document).ready(function () {
 		dots: true,
 	});
 
+	$('.item-case').fadeOut(400);
+	setTimeout(function () { $(`#item-case-1`).fadeIn(400); }, 400);
+
+
+	$('.menu-cases__item').click(function () {
+		$('.item-case').fadeOut(400);
+		var idItem = $(this).attr('data-index');
+		setTimeout(function () { $(`#item-case-${idItem}`).fadeIn(400); }, 400);
+		$(this).addClass('_active');
+		$('.menu-cases__item').not($(this)).removeClass('_active');
+	});
+
 });
