@@ -257,7 +257,8 @@
 		flex-direction: column;
 
 		img {
-			max-width: 100%;
+			flex: 0 1 100%;
+			width: 100%;
 			display: block;
 		}
 	}
