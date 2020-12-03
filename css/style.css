@@ -127,7 +127,7 @@ body {
 
 @media (max-width: 768px) {
   .header-radar {
-    padding: 20px 0 0 0;
+    padding: 20px 0 15px 0;
   }
 }
 

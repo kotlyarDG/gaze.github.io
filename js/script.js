@@ -38,30 +38,30 @@ $(document).ready(function () {
 	});
 
 
-	if ($(window).width() >= 991) {
-		$(window).on('scroll', function () {
-			var curPos = $(this).scrollTop();
 
-			if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+	$(window).on('scroll', function () {
+		var curPos = $(this).scrollTop();
+
+		if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+			navItem.removeClass('_active');
+			sections.removeClass('_active');
+			$('#footer-radar').addClass('_active');
+			nav.find('a[href="#footer-radar"]').addClass('_active');
+		}
+
+		sections.each(function () {
+			var top = $(this).offset().top - navHeight;
+			var bottom = top + $(this).outerHeight();
+
+			if (curPos >= top && curPos <= bottom) {
 				navItem.removeClass('_active');
 				sections.removeClass('_active');
-				$('#footer-radar').addClass('_active');
-				nav.find('a[href="#footer-radar"]').addClass('_active');
+
+				$(this).addClass('_active');
+				nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('_active');
 			}
-
-			sections.each(function () {
-				var top = $(this).offset().top - navHeight;
-				var bottom = top + $(this).outerHeight();
-
-				if (curPos >= top && curPos <= bottom) {
-					navItem.removeClass('_active');
-					sections.removeClass('_active');
-
-					$(this).addClass('_active');
-					nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('_active');
-				}
-			});
 		});
-	}
+	});
+
 
 });
