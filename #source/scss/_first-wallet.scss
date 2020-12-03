@@ -1,0 +1,133 @@
+.first-wallet {
+	background: url("../images/system_img/wallet/bg-main.png") center / cover no-repeat;
+	min-height: 100vh;
+
+	&__wrapper {
+		max-width: 1250px;
+		margin: 0 auto;
+		position: relative;
+		min-height: 100vh;
+		padding: 75px 0 15px 0;
+
+		@media (max-width: $lg) {
+			max-width: 1150px;
+		}
+
+		@media (max-width: $md) {
+			max-width: 930px;
+		}
+
+		@media (max-width: $sm) {
+			max-width: 90%;
+		}
+
+		@media (max-width: 500px) {
+			padding: 45px 0 15px 0;
+		}
+	}
+
+	&__logo {
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__body {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		text-align: right;
+		max-width: 50vw;
+
+		transform: translateY(-50%);
+
+		@media (max-width: $sm) {
+			position: static;
+			margin: 40px 0 0 0;
+			transform: none;
+			max-width: 100%;
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		line-height: 121%;
+		color: #ffffff;
+
+		@include adaptive-font(62, 45);
+	}
+
+	&__subtitle {
+		font-size: 24px;
+		line-height: 29px;
+		color: #ffffff;
+		margin: 10px 0 0 0;
+
+		@media (max-width: 500px) {
+			margin: 0 0 0 0;
+		}
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 18px;
+		color: #ffffff;
+		margin: 20px 0 0 0;
+	}
+
+	&__buttons {
+		display: flex;
+		margin: 28px 0 0 0;
+		justify-content: flex-end;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+		}
+	}
+
+	&__btn {
+		padding: 10px 30px;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 18px;
+		transition: all 0.5s ease 0s;
+		display: inline-block;
+
+		@media (max-width: 500px) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__btn--call {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 18px;
+
+		color: #300e5e;
+		background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ececec 100%);
+		box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.25);
+		border-radius: 8px;
+		transition: transform 0.3s ease 0s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&__btn--start {
+		color: #ffffff;
+		background: linear-gradient(95.43deg, #ff9085 0.55%, #fb6fbb 98.27%);
+		box-shadow: 0px 10px 20px rgba(245, 43, 130, 0.35);
+		margin: 0 0 0 30px;
+
+		@media (max-width: 500px) {
+			margin: 20px 0 0 0;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
