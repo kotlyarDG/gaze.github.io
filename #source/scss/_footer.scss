@@ -1,3 +1,167 @@
-.footer{
-	
+.footer-radar {
+	background: linear-gradient(121.85deg, #a02fc8 8%, #70178f 71.63%);
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	position: relative;
+	padding: 70px 0 55px 0;
+	&__wrapper {
+		max-width: 1250px;
+		margin: 0 auto;
+
+		@media (max-width: $lg) {
+			max-width: 1150px;
+		}
+
+		@media (max-width: $md) {
+			max-width: 930px;
+		}
+
+		@media (max-width: $sm) {
+			max-width: 90%;
+		}
+	}
+
+	&__title {
+		color: #fff;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		margin: 40px 0 70px 0;
+
+		@media (max-width: $xs) {
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+	}
+
+	&__block {
+	}
+
+	&__ellipse-1 {
+		position: absolute;
+		width: 33px;
+		height: 33px;
+		border-radius: 50%;
+		background: #ffffff;
+		box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.25);
+		top: 15%;
+		right: 8%;
+
+		@media (max-width: $md) {
+			top: 45%;
+		}
+	}
+
+	&__ellipse-2 {
+		position: absolute;
+		width: 65px;
+		height: 65px;
+		border-radius: 50%;
+		background: #ffffff;
+		box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.25);
+		bottom: 15%;
+		right: 8%;
+
+		@media (max-width: $md) {
+			width: 45px;
+			height: 45px;
+		}
+	}
+
+	&__ellipse-3 {
+		position: absolute;
+		width: 193px;
+		height: 193px;
+		border-radius: 50%;
+		background: #ffffff;
+		box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.25);
+		bottom: 25%;
+		right: 0;
+		transform: translateX(40%);
+
+		@media (max-width: $md) {
+			width: 100px;
+			height: 100px;
+		}
+	}
+}
+.item-footer {
+	display: flex;
+	flex: 0 1 33.333%;
+	justify-content: center;
+
+	@media (max-width: $xs) {
+		justify-content: flex-start;
+		margin: 0 0 30px 0;
+
+		&:last-child {
+			margin: 0 0 0 0;
+		}
+	}
+	&__img {
+		flex: 0 0 28px;
+		margin: 0 12px 0 0;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 18px;
+		color: #ffffff;
+	}
+}
+.block-ps {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__logo-block {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		flex: 0 0 70px;
+		height: 17px;
+		margin: 0 9px 0 0;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__label {
+		font-size: 15px;
+		line-height: 18px;
+
+		color: #ffffff;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 2px;
+			height: 13px;
+			background-color: #ffffff;
+			margin: 0 9px 0 0;
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	&__link {
+		margin: 13px 0 0 0;
+		font-size: 13px;
+		line-height: 16px;
+		text-align: center;
+		letter-spacing: 0.055em;
+		text-decoration-line: underline;
+		color: #ffffff;
+		transition: 0.3s;
+	}
 }
