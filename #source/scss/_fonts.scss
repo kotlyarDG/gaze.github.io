@@ -1,2 +1,10 @@
 // Файл подключения шрифтов
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+@font-face {
+	font-family: "SF UI Display";
+	font-style: normal;
+	font-weight: normal;
+	src: local("SF UI Display Medium"),
+		url("D:\web\Projects\gaze.github.io\fonts\sf-ui-display-medium-58646be638f96.woff") format("woff");
+}
