@@ -1,0 +1,139 @@
+.capabality-wallet {
+	padding: 129px 0 50px 0;
+	background: url("../images/system_img/wallet/lines.svg") center / cover no-repeat;
+
+	@media (max-width: 500px) {
+		padding: 60px 0 50px 0;
+	}
+
+	&__wrapper {
+		max-width: 1250px;
+		margin: 0 auto;
+
+		@media (max-width: $lg) {
+			max-width: 1150px;
+		}
+
+		@media (max-width: $md) {
+			max-width: 930px;
+		}
+
+		@media (max-width: $sm) {
+			max-width: 90%;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 39px;
+		text-align: right;
+		color: #131313;
+		margin: 0 0 30px 0;
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+	}
+}
+.item-capabality {
+	display: flex;
+	max-width: 66.667%;
+	align-items: center;
+	margin: 0 0 140px 0;
+
+	@media (max-width: $md) {
+		max-width: 80%;
+	}
+
+	&:first-child {
+		margin: 0 0 0 0;
+	}
+
+	&:last-child {
+		margin: 0 0 0 0;
+	}
+
+	@media (max-width: $md) {
+		max-width: 80%;
+	}
+
+	@media (max-width: $sm) {
+		max-width: 100%;
+		&:first-child {
+			margin: 0 0 140px 0;
+		}
+	}
+
+	@media (max-width: $xs) {
+		margin: 0 0 60px 0;
+		&:first-child {
+			margin: 0 0 60px 0;
+		}
+	}
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+
+	&__img {
+		flex: 0 1 33.333%;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__body {
+		flex: 0 1 66.667%;
+		padding: 0 0 0 90px;
+
+		@media (max-width: $xs) {
+			padding: 0 0 0 40px;
+		}
+		@media (max-width: 500px) {
+			padding: 40px 0 0 0;
+		}
+
+		&--right {
+			padding: 0 90px 0 0;
+			@media (max-width: $xs) {
+				padding: 0 40px 0 0;
+			}
+
+			@media (max-width: 500px) {
+				padding: 40px 0 0 0;
+			}
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		color: #131313;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 18px;
+		color: #131313;
+
+		margin: 7px 0 0 0;
+	}
+
+	&--right {
+		align-self: flex-end;
+		text-align: right;
+		flex-direction: row-reverse;
+		@media (max-width: 500px) {
+			flex-direction: column;
+			text-align: left;
+		}
+	}
+}
