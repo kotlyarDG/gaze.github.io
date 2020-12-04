@@ -2528,6 +2528,118 @@ body {
   font-weight: bold;
 }
 
+.scope-wallet {
+  padding: 85px 0 70px 0;
+  background: url("../../images/system_img/wallet/scope/bg.png") center/cover no-repeat;
+}
+
+.scope-wallet__wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1336px) {
+  .scope-wallet__wrapper {
+    max-width: 1150px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .scope-wallet__wrapper {
+    max-width: 930px;
+  }
+}
+
+@media (max-width: 991px) {
+  .scope-wallet__wrapper {
+    max-width: 90%;
+  }
+}
+
+.scope-wallet__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.scope-wallet__subtitle {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 550px;
+  margin: 10px auto 0 auto;
+}
+
+.scope-wallet__items {
+  margin: 65px 0 0 0;
+}
+
+.scope-wallet__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 0 60px 0;
+}
+
+.scope-wallet__row:last-child {
+  margin: 0 0 0 0;
+}
+
+@media (max-width: 650px) {
+  .scope-wallet__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 0 0;
+  }
+}
+
+.item-scope {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 160px;
+          flex: 0 1 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 650px) {
+  .item-scope {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin: 0 0 60px 0;
+  }
+}
+
+.item-scope__img {
+  max-width: 160px;
+}
+
+.item-scope__img img {
+  max-width: 100%;
+}
+
+.item-scope__text {
+  margin: 15px 0 0 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
 .footer-radar {
   background: -webkit-linear-gradient(328.15deg, #a02fc8 8%, #70178f 71.63%);
   background: -o-linear-gradient(328.15deg, #a02fc8 8%, #70178f 71.63%);

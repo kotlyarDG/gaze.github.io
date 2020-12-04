@@ -7,8 +7,6 @@ $(document).ready(function () {
 	$('.item-card').fadeOut(400);
 	setTimeout(function () { $(`#item-card-${idItem}`).fadeIn(400); }, 400);
 
-
-
 	menuCard.click(function () {
 		itemsCard.fadeOut(400);
 		idItem = $(this).attr('data-index');
