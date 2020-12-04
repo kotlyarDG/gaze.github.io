@@ -2,6 +2,10 @@
 	background: url("../images/system_img/wallet/bg-main.png") center / cover no-repeat;
 	min-height: 100vh;
 
+	@media (max-width: 500px) {
+		min-height: auto;
+	}
+
 	&__wrapper {
 		max-width: 1250px;
 		margin: 0 auto;
@@ -22,7 +26,8 @@
 		}
 
 		@media (max-width: 500px) {
-			padding: 45px 0 15px 0;
+			padding: 45px 0 100px 0;
+			min-height: auto;
 		}
 	}
 
