@@ -195,6 +195,35 @@
 
 .footer-wallet {
 	padding: 100px 0 35px 0;
+	position: relative;
+
+	@media (max-width: $xs) {
+		padding: 50px 0 0 0;
+	}
+
+	&__rectangle-1 {
+		position: absolute;
+		right: 0;
+		top: 8%;
+
+		@media (max-width: 1500px) {
+			top: 55%;
+		}
+
+		@media (max-width: $sm) {
+			top: 5%;
+		}
+
+		@media (max-width: $xs) {
+			display: none;
+		}
+	}
+
+	&__rectangle-2 {
+	}
+
+	&__rectangle-3 {
+	}
 
 	&__wrapper {
 		max-width: 1250px;
@@ -309,48 +338,5 @@
 			top: 0;
 			left: 0;
 		}
-	}
-}
-.footet-wallet {
-	&__rectangle-1 {
-	}
-
-	&__rectangle-2 {
-	}
-
-	&__rectangle-3 {
-	}
-}
-.item-footer {
-	&__img {
-	}
-
-	&__text {
-	}
-}
-.footer-radar {
-	&__item {
-	}
-
-	&__block {
-	}
-}
-.block-ps {
-	&__logo-block {
-	}
-
-	&__logo {
-	}
-
-	&__label {
-	}
-
-	&__label--wallet {
-	}
-
-	&__link {
-	}
-
-	&__link--wallet {
 	}
 }

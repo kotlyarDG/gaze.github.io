@@ -3058,6 +3058,8 @@ body {
   left: 0;
   width: 40%;
   z-index: 1;
+  max-height: 80%;
+  overflow: hidden;
 }
 
 .test-wallet__img img {
@@ -3461,6 +3463,37 @@ body {
 
 .footer-wallet {
   padding: 100px 0 35px 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .footer-wallet {
+    padding: 50px 0 0 0;
+  }
+}
+
+.footer-wallet__rectangle-1 {
+  position: absolute;
+  right: 0;
+  top: 8%;
+}
+
+@media (max-width: 1500px) {
+  .footer-wallet__rectangle-1 {
+    top: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-wallet__rectangle-1 {
+    top: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-wallet__rectangle-1 {
+    display: none;
+  }
 }
 
 .footer-wallet__wrapper {

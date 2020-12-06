@@ -15,4 +15,6 @@ $(document).ready(function () {
 		menuCard.not($(this)).removeClass('_active');
 	});
 
+	AOS.init();
+
 });
