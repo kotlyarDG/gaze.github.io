@@ -235,7 +235,7 @@
 			align-self: center;
 		}
 
-		@media (max-width: $md) {
+		@media (max-width: $xs) {
 			max-width: 100%;
 			align-self: center;
 			margin: 15px 0;
@@ -246,7 +246,7 @@
 		flex: 0 1 76%;
 
 		img {
-			max-width: 100%;
+			width: 100%;
 			display: block;
 		}
 	}
