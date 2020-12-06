@@ -102,6 +102,15 @@
 			margin: 0 0 0 0;
 		}
 	}
+
+	&--wallet {
+		justify-content: flex-start;
+		margin: 0 0 20px 0;
+
+		&:last-child {
+			margin: 0 0 0 0;
+		}
+	}
 	&__img {
 		flex: 0 0 28px;
 		margin: 0 12px 0 0;
@@ -115,15 +124,21 @@
 		font-size: 15px;
 		line-height: 18px;
 		color: #ffffff;
+
+		&--wallet {
+			color: #131313;
+		}
 	}
 }
 .block-ps {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 	&__logo-block {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 	}
 
 	&__logo {
@@ -152,6 +167,14 @@
 			position: relative;
 			top: 2px;
 		}
+
+		&--wallet {
+			color: #190051;
+
+			&:before {
+				background-color: #190051;
+			}
+		}
 	}
 
 	&__link {
@@ -163,5 +186,171 @@
 		text-decoration-line: underline;
 		color: #ffffff;
 		transition: 0.3s;
+
+		&--wallet {
+			color: #131313;
+		}
+	}
+}
+
+.footer-wallet {
+	padding: 100px 0 35px 0;
+
+	&__wrapper {
+		max-width: 1250px;
+		margin: 0 auto;
+
+		@media (max-width: $lg) {
+			max-width: 1150px;
+		}
+
+		@media (max-width: $md) {
+			max-width: 930px;
+		}
+
+		@media (max-width: $sm) {
+			max-width: 90%;
+		}
+	}
+
+	&__flex {
+		display: flex;
+		margin: 0 0 90px 0;
+
+		@media (max-width: $sm) {
+			flex-direction: column;
+		}
+	}
+
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 0 150px 0 0;
+
+		&:last-child {
+			padding: 0 0 0 0;
+		}
+
+		@media (max-width: $md) {
+			padding: 0 50px 0 0;
+		}
+
+		@media (max-width: $sm) {
+			padding: 0 0 50px 0;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		margin: 14px 0 0 0;
+	}
+
+	&__item {
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 34px;
+
+		color: #131313;
+	}
+
+	&__subtitle {
+		font-size: 15px;
+		line-height: 18px;
+
+		color: #131313;
+	}
+
+	&__phone-link {
+		font-size: 18px;
+		line-height: 187.4%;
+
+		color: #ffffff;
+		padding: 17px 35px 17px 80px;
+		background: #8a24ae;
+		box-shadow: 0px 6px 12px rgba(138, 36, 174, 0.35);
+		border-radius: 10px;
+		position: relative;
+		white-space: nowrap;
+		display: inline-block;
+		margin: 17px 0 0 0;
+
+		&:before {
+			content: url("../images/system_img/wallet/footer/phone.svg");
+			position: absolute;
+			top: 8px;
+			left: 35px;
+		}
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 18px;
+
+		color: #131313;
+		margin: 20px 0 8px 0;
+	}
+
+	&__link {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 18px;
+		text-decoration-line: underline;
+		position: relative;
+		color: #131313;
+		padding: 0 0 0 19px;
+
+		&::before {
+			content: url("../images/system_img/wallet/footer/globe.svg");
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+.footet-wallet {
+	&__rectangle-1 {
+	}
+
+	&__rectangle-2 {
+	}
+
+	&__rectangle-3 {
+	}
+}
+.item-footer {
+	&__img {
+	}
+
+	&__text {
+	}
+}
+.footer-radar {
+	&__item {
+	}
+
+	&__block {
+	}
+}
+.block-ps {
+	&__logo-block {
+	}
+
+	&__logo {
+	}
+
+	&__label {
+	}
+
+	&__label--wallet {
+	}
+
+	&__link {
+	}
+
+	&__link--wallet {
 	}
 }
