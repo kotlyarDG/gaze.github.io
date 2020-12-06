@@ -159,8 +159,18 @@
 	}
 
 	&__title {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		color: #131313;
+		margin: 0 0 10px 0;
 	}
 
 	&__text {
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0.055em;
+
+		color: #131313;
 	}
 }

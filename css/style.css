@@ -591,7 +591,7 @@ body {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin: 0 0 50px 0;
+  margin: 100px 0 50px 0;
 }
 
 @media (max-width: 1500px) {
@@ -664,7 +664,22 @@ body {
 
 .products-radar {
   padding: 100px 0 150px 0;
-  background: url("../images/system_img/radar/products/bg.svg") top right/cover no-repeat;
+  position: relative;
+}
+
+.products-radar__bg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.products-radar__bg svg {
+  width: 100vw;
+  height: 100%;
 }
 
 .products-radar__wrapper {
@@ -1832,6 +1847,21 @@ body {
   }
 }
 
+.item-promo__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #131313;
+  margin: 0 0 10px 0;
+}
+
+.item-promo__text {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.055em;
+  color: #131313;
+}
+
 .first-wallet {
   background: url("../images/system_img/wallet/bg-main.png") center/cover no-repeat;
   min-height: 100vh;
@@ -2186,6 +2216,7 @@ body {
 .capabality-wallet {
   padding: 129px 0 0 0;
   background: url("../images/system_img/wallet/lines.svg") center/cover no-repeat;
+  position: relative;
 }
 
 @media (max-width: 500px) {
@@ -2296,8 +2327,8 @@ body {
 
 .item-capabality__img {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.333%;
-          flex: 0 1 33.333%;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
 }
 
 .item-capabality__img img {
@@ -2306,9 +2337,9 @@ body {
 
 .item-capabality__body {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 66.667%;
-          flex: 0 1 66.667%;
-  padding: 0 0 0 90px;
+      -ms-flex: 0 1 55%;
+          flex: 0 1 55%;
+  padding: 0 0 0 70px;
 }
 
 @media (max-width: 768px) {
@@ -2324,7 +2355,7 @@ body {
 }
 
 .item-capabality__body--right {
-  padding: 0 90px 0 0;
+  padding: 0 70px 0 0;
 }
 
 @media (max-width: 768px) {

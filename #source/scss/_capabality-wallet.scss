@@ -1,6 +1,7 @@
 .capabality-wallet {
 	padding: 129px 0 0 0;
 	background: url("../images/system_img/wallet/lines.svg") center / cover no-repeat;
+	position: relative;
 
 	@media (max-width: 500px) {
 		padding: 60px 0 0 0;
@@ -81,16 +82,17 @@
 	}
 
 	&__img {
-		flex: 0 1 33.333%;
+		flex: 0 1 45%;
 
 		img {
 			max-width: 100%;
+			// min-height: 350px;
 		}
 	}
 
 	&__body {
-		flex: 0 1 66.667%;
-		padding: 0 0 0 90px;
+		flex: 0 1 55%;
+		padding: 0 0 0 70px;
 
 		@media (max-width: $xs) {
 			padding: 0 0 0 40px;
@@ -100,7 +102,7 @@
 		}
 
 		&--right {
-			padding: 0 90px 0 0;
+			padding: 0 70px 0 0;
 			@media (max-width: $xs) {
 				padding: 0 40px 0 0;
 			}
