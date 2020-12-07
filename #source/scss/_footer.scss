@@ -196,9 +196,10 @@
 .footer-wallet {
 	padding: 100px 0 35px 0;
 	position: relative;
+	background-color: #fff;
 
 	@media (max-width: $xs) {
-		padding: 50px 0 0 0;
+		padding: 50px 0 50px 0;
 	}
 
 	&__rectangle-1 {
