@@ -129,5 +129,9 @@
 		&:hover {
 			transform: scale(1.02);
 		}
+
+		@media (max-width: $xs) {
+			align-self: flex-end;
+		}
 	}
 }

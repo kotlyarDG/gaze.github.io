@@ -3392,6 +3392,13 @@ body {
           transform: scale(1.02);
 }
 
+@media (max-width: 768px) {
+  .test-wallet__btn {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
 .footer-radar {
   background: -webkit-linear-gradient(328.15deg, #a02fc8 8%, #70178f 71.63%);
   background: -o-linear-gradient(328.15deg, #a02fc8 8%, #70178f 71.63%);
