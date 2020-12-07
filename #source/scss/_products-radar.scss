@@ -3,6 +3,11 @@
 	// background: url("../images/system_img/radar/products/bg.svg") top right / cover no-repeat;
 	position: relative;
 
+	@media (max-width: $sm) {
+		background: url("../images/system_img/radar/products/bg.svg") top right / cover no-repeat;
+		padding: 100px 0 100px 0;
+	}
+
 	&__bg {
 		display: block;
 		position: absolute;
@@ -14,6 +19,10 @@
 		svg {
 			width: 100vw;
 			height: 100%;
+		}
+
+		@media (max-width: $sm) {
+			display: none;
 		}
 	}
 

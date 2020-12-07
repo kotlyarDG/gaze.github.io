@@ -128,6 +128,16 @@
 				height: 34px;
 			}
 		}
+
+		@media (max-width: 450px) {
+			padding: 17px 30px 17px 60px;
+
+			span {
+				&:before {
+					left: 15px;
+				}
+			}
+		}
 	}
 }
 .item-promo {
