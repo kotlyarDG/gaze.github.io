@@ -9,7 +9,7 @@ $(document).ready(function () {
 			$('.main__link').not($(this)).css('height', '30vh');
 
 			setInterval(function () {
-				window.location = url;
+				window.location.href = url;
 
 			}, 400);
 		});
