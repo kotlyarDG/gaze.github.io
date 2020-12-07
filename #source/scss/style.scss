@@ -65,7 +65,8 @@ body {
 	display: flex;
 
 	@media (max-width: $xs) {
-		flex-direction: column;
+		// flex-direction: column;
+		display: block;
 	}
 }
 .radar {
@@ -114,9 +115,9 @@ body {
 	&:hover {
 		flex: 0 1 70%;
 
-		@media (max-width: $xs) {
-			height: 70vh;
-		}
+		// @media (max-width: $xs) {
+		// 	height: 70vh;
+		// }
 	}
 
 	@media (max-width: $xs) {
