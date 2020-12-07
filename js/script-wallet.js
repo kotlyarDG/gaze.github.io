@@ -141,4 +141,13 @@ $(document).ready(function () {
 				Element.prototype.msMatchesSelector;
 		}
 	})();
+
+	(function () {
+		var locationOnPageload = location.href;
+		window.onpopstate = function (event) {
+			if (location.href !== locationOnPageload) {
+				document.location.reload();
+			}
+		}
+	})();
 });
