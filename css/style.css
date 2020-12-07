@@ -2064,7 +2064,7 @@ body {
   min-height: 100vh;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 991px) {
   .first-wallet {
     min-height: auto;
   }
@@ -2093,11 +2093,6 @@ body {
 @media (max-width: 991px) {
   .first-wallet__wrapper {
     max-width: 90%;
-  }
-}
-
-@media (max-width: 500px) {
-  .first-wallet__wrapper {
     padding: 45px 0 100px 0;
     min-height: auto;
   }
@@ -2242,6 +2237,7 @@ body {
 
 .about-wallet {
   padding: 97px 0 15px 0;
+  background-color: #fff;
 }
 
 @media (max-width: 500px) {
@@ -3271,7 +3267,7 @@ body {
   background-color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .test-wallet {
     background: #fff url("../images/system_img/wallet/test/bg.svg") top right/cover no-repeat;
   }
@@ -3315,7 +3311,7 @@ body {
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .test-wallet__bg {
     display: none;
   }
@@ -3351,11 +3347,6 @@ body {
 @media (max-width: 991px) {
   .test-wallet__wrapper {
     max-width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .test-wallet__wrapper {
     padding: 150px 0 0 0;
   }
 }

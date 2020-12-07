@@ -3,7 +3,7 @@
 	padding: 0 0 80px 0;
 	background-color: #fff;
 
-	@media (max-width: $xs) {
+	@media (max-width: $sm) {
 		background: #fff url("../images/system_img/wallet/test/bg.svg") top right / cover no-repeat;
 	}
 
@@ -40,7 +40,7 @@
 			height: 100%;
 		}
 
-		@media (max-width: $xs) {
+		@media (max-width: $sm) {
 			display: none;
 		}
 	}
@@ -64,9 +64,6 @@
 
 		@media (max-width: $sm) {
 			max-width: 90%;
-		}
-
-		@media (max-width: $xs) {
 			padding: 150px 0 0 0;
 		}
 	}
