@@ -1,5 +1,5 @@
 .first-radar {
-	padding: calc(7vh + 46px) 0 15px 0;
+	padding: 96px 0 15px 0;
 	position: relative;
 	background-color: #fff;
 
@@ -7,7 +7,7 @@
 
 	@media (max-width: 1025px) {
 		min-height: auto;
-		padding: calc(7vh + 46px) 0 0 0;
+		padding: 96px 0 0 0;
 	}
 
 	@media (max-width: $xs) {
@@ -15,7 +15,7 @@
 	}
 	&__wrapper {
 		display: flex;
-		min-height: calc(93vh - 61px);
+		min-height: calc(100vh - 96px);
 
 		max-width: 1250px;
 		margin: 0 auto;
