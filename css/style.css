@@ -360,7 +360,7 @@ body {
     opacity: 1;
     height: auto;
     max-height: 100vh;
-    padding: 40px 6% 30px 5%;
+    padding: 40px 6% 5px 5%;
     display: block;
   }
 }
@@ -565,6 +565,7 @@ body {
 .first-radar {
   padding: calc(7vh + 46px) 0 15px 0;
   position: relative;
+  background-color: #fff;
   min-height: 100vh;
 }
 
@@ -1029,6 +1030,10 @@ body {
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.055em;
+}
+
+.plus-radar {
+  background-color: #fff;
 }
 
 .plus-radar__wrapper {
@@ -1544,6 +1549,7 @@ body {
 
 .cases-radar {
   padding: 64px 0 76px 0;
+  background-color: #fff;
 }
 
 .cases-radar__wrapper {
@@ -1832,6 +1838,7 @@ body {
 .promo-radar {
   position: relative;
   padding: 0 0 80px 0;
+  background-color: #fff;
 }
 
 .promo-radar__wrapper {
