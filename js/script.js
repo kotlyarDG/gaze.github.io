@@ -137,7 +137,7 @@ $(document).ready(function () {
 		// 	}
 		// }
 		// body.style.paddingRight = lockPaddingValue;
-		body.classList.add('_lock');
+		// body.classList.add('_lock');
 
 		unlock = false;
 		setTimeout(function () {
@@ -152,7 +152,7 @@ $(document).ready(function () {
 				el.style.paddingRight = '0px';
 			}
 			body.style.paddingRight = '0px';
-			body.classList.remove('_lock');
+			// body.classList.remove('_lock');
 		}, timeout);
 
 		unlock = false;

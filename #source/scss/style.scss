@@ -116,32 +116,6 @@ body {
 		}
 	}
 
-	&__check {
-		margin: 16px 0 0 0;
-		font-size: 15px;
-		line-height: 21px;
-
-		&:before {
-			content: "";
-			display: inline-block;
-			width: 11px;
-			height: 11px;
-			border: 1px solid #711890;
-			margin-right: 5px;
-			border-radius: 50%;
-		}
-	}
-
-	&__check-input {
-		position: absolute;
-		z-index: -1;
-		opacity: 0;
-
-		&:checked + label:before {
-			background-color: #711890;
-		}
-	}
-
 	&__btn {
 		display: block;
 		margin: 40px 0 0 auto;

@@ -202,32 +202,6 @@ body {
   opacity: 0.6;
 }
 
-.popup__check {
-  margin: 16px 0 0 0;
-  font-size: 15px;
-  line-height: 21px;
-}
-
-.popup__check:before {
-  content: "";
-  display: inline-block;
-  width: 11px;
-  height: 11px;
-  border: 1px solid #711890;
-  margin-right: 5px;
-  border-radius: 50%;
-}
-
-.popup__check-input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.popup__check-input:checked + label:before {
-  background-color: #711890;
-}
-
 .popup__btn {
   display: block;
   margin: 40px 0 0 auto;
