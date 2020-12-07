@@ -10,8 +10,6 @@ $(document).ready(function () {
 
 			setInterval(function () {
 				window.location.href = url;
-				// e.stopPropagation();
-				// window.open(url, '_self');
 			}, 400);
 		});
 	}

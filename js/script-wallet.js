@@ -142,12 +142,4 @@ $(document).ready(function () {
 		}
 	})();
 
-	(function () {
-		var locationOnPageload = location.href;
-		window.onpopstate = function (event) {
-			if (location.href !== locationOnPageload) {
-				document.location.reload();
-			}
-		}
-	})();
 });
