@@ -63,18 +63,19 @@ body {
 	min-height: 100vh;
 	overflow: hidden;
 	display: flex;
+
+	@media (max-width: $xs) {
+		flex-direction: column;
+	}
 }
 .radar {
+	display: block;
 	position: relative;
 	flex: 0 1 50%;
 	overflow: hidden;
 	max-height: 100vh;
 	min-height: 100vh;
 	transition: 0.4s;
-	img {
-		// height: 100vh;
-		width: 80vw;
-	}
 
 	&:before {
 		content: "";
@@ -96,12 +97,45 @@ body {
 		top: 0;
 		right: -1px;
 		position: absolute;
-		z-index: 2;
+		z-index: 40;
 		background-color: #fff;
+
+		@media (max-width: $xs) {
+			top: 99%;
+			left: 0;
+			height: 2px;
+			width: 100vw;
+			background-color: #fff;
+
+			transform: translate(0, 2px);
+		}
 	}
 
 	&:hover {
 		flex: 0 1 70%;
+
+		@media (max-width: $xs) {
+			height: 70vh;
+		}
+	}
+
+	@media (max-width: $xs) {
+		width: 100vw;
+		max-height: auto;
+		min-height: auto;
+		height: 50vh;
+	}
+
+	&__bg {
+		width: 70vw;
+		height: 100vh;
+
+		background: url("../images/system_img/main/01.png") center / cover no-repeat;
+
+		@media (max-width: $xs) {
+			width: 100vw;
+			height: 70vh;
+		}
 	}
 }
 .main {
@@ -144,26 +178,30 @@ body {
 			width: 82px;
 			height: 79px;
 
+			@media (max-width: $xs) {
+				top: 0;
+				left: 50%;
+			}
+
 			img {
 				width: 82px;
 				height: 79px;
 			}
 		}
+
+		@media (max-width: $xs) {
+			top: 100%;
+			right: 50%;
+		}
 	}
 }
 .wallet {
+	display: block;
 	position: relative;
 	flex: 0 1 50%;
 	overflow: hidden;
 	max-height: 100vh;
 	transition: 0.4s;
-	img {
-		// height: 100vh;
-		width: 85vw;
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
 
 	&:before {
 		content: "";
@@ -177,8 +215,53 @@ body {
 		background: rgba(19, 19, 19, 0.5);
 	}
 
+	&:after {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 2px;
+		top: 0;
+		left: -1px;
+		position: absolute;
+		z-index: 40;
+		background-color: #fff;
+
+		@media (max-width: $xs) {
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 100vw;
+			background-color: #fff;
+
+			transform: translate(0, -1px);
+		}
+	}
+
 	&:hover {
 		flex: 0 1 70%;
+
+		@media (max-width: $xs) {
+			height: 70vh;
+		}
+	}
+
+	@media (max-width: $xs) {
+		width: 100vw;
+		max-height: auto;
+		min-height: auto;
+		height: 50vh;
+	}
+
+	&__bg {
+		width: 70vw;
+		height: 100vh;
+
+		background: url("../images/system_img/main/02.png") center / cover no-repeat;
+
+		@media (max-width: $xs) {
+			width: 100vw;
+			height: 70vh;
+		}
 	}
 }
 
