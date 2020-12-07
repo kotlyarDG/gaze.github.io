@@ -1,5 +1,5 @@
 .rates-wallet {
-	padding: 100px 0 0 0;
+	padding: 100px 0 25px 0;
 	background-color: #fff;
 	&__wrapper {
 		max-width: 1250px;
@@ -36,8 +36,9 @@
 		}
 
 		@media (max-width: $xs) {
-			flex-direction: column;
-			align-items: center;
+			// flex-direction: column;
+			// align-items: center;
+			display: block;
 		}
 	}
 
@@ -66,14 +67,14 @@
 	}
 
 	@media (max-width: $xs) {
-		margin: 0 0 50px 0;
+		margin: 0 auto 50px auto;
 
 		&:first-child {
-			margin: 0 0 50px 0;
+			margin: 0 auto 50px auto;
 		}
 
 		&:last-child {
-			margin: 0;
+			margin: 0 auto 0 auto;
 		}
 	}
 
