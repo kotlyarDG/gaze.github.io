@@ -9,8 +9,9 @@ $(document).ready(function () {
 			$('.main__link').not($(this)).css('height', '30vh');
 
 			setInterval(function () {
-				window.location.href = url;
-
+				// window.location.href = url;
+				// e.stopPropagation();
+				window.open(url, '_self');
 			}, 400);
 		});
 	}
