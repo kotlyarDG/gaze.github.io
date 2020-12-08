@@ -337,6 +337,10 @@
 		flex: 0 1 33.333%;
 		padding: 0 150px 0 0;
 
+		&--radar {
+			padding: 0 50px 0 0;
+		}
+
 		&:last-child {
 			padding: 0 0 0 0;
 		}

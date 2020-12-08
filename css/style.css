@@ -4109,6 +4109,10 @@ body {
   padding: 0 150px 0 0;
 }
 
+.footer-wallet__column--radar {
+  padding: 0 50px 0 0;
+}
+
 .footer-wallet__column:last-child {
   padding: 0 0 0 0;
 }
