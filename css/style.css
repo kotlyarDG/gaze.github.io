@@ -2082,6 +2082,12 @@ body {
   bottom: 0;
   right: 0;
   width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media (max-width: 500px) {
@@ -2760,12 +2766,15 @@ body {
 }
 
 .item-capabality__body--right {
-  padding: 0 70px 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+  padding: 120px 0 0 0;
 }
 
 @media (max-width: 768px) {
   .item-capabality__body--right {
-    padding: 0 40px 0 0;
+    padding: 50px 0 0 0;
   }
 }
 
