@@ -7,9 +7,12 @@ $(document).ready(function () {
 			var url = $(this).attr('data-link');
 			$(this).css('height', '70vh');
 			$('.main__link').not($(this)).css('height', '30vh');
+			var id = $(this).attr('data-index');
+
 
 			setInterval(function () {
-				window.location.href = url;
+				$('#' + id)[0].click();
+				// $($(this).attr('data-index')).click();
 			}, 400);
 		});
 	}
