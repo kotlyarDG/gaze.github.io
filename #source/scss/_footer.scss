@@ -21,6 +21,15 @@
 		}
 	}
 
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: $xs) {
+			flex-direction: column;
+		}
+	}
+
 	&__title {
 		color: #fff;
 	}
@@ -51,8 +60,20 @@
 		top: 15%;
 		right: 8%;
 
+		@media (max-width: $lg) {
+			top: 60%;
+			right: 6%;
+		}
+
 		@media (max-width: $md) {
-			top: 45%;
+			top: 65%;
+		}
+		@media (max-width: $xs) {
+			top: 73%;
+			right: 8%;
+		}
+		@media (max-width: 580px) {
+			display: none;
 		}
 	}
 
@@ -66,9 +87,24 @@
 		bottom: 15%;
 		right: 8%;
 
-		@media (max-width: $md) {
+		@media (max-width: $lg) {
 			width: 45px;
 			height: 45px;
+			bottom: 7%;
+			right: 5%;
+		}
+
+		@media (max-width: $md) {
+			bottom: 4%;
+			right: 6%;
+		}
+
+		@media (max-width: $xs) {
+			right: 8%;
+		}
+
+		@media (max-width: 580px) {
+			display: none;
 		}
 	}
 
@@ -83,16 +119,65 @@
 		right: 0;
 		transform: translateX(40%);
 
-		@media (max-width: $md) {
+		@media (max-width: $lg) {
 			width: 100px;
 			height: 100px;
+			bottom: 10%;
+		}
+
+		@media (max-width: $md) {
+			bottom: 7%;
+		}
+
+		@media (max-width: $xs) {
+		}
+
+		@media (max-width: 580px) {
+			display: none;
+		}
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 18px;
+
+		color: #fff;
+		margin: 20px 0 8px 0;
+
+		span {
+			font-weight: bold;
+		}
+
+		max-width: 313px;
+	}
+
+	&__link {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 18px;
+		text-decoration-line: underline;
+		position: relative;
+		color: #fff;
+		padding: 0 0 0 19px;
+
+		&::before {
+			content: url("../images/system_img/radar/footer/globe.svg");
+			position: absolute;
+			top: 0;
+			left: 0;
 		}
 	}
 }
 .item-footer {
 	display: flex;
 	flex: 0 1 33.333%;
-	justify-content: center;
+	justify-content: flex-start;
+	margin: 0 0 20px 0;
+
+	&:last-child {
+		margin: 0 0 0 0;
+	}
 
 	@media (max-width: $xs) {
 		justify-content: flex-start;
@@ -103,14 +188,6 @@
 		}
 	}
 
-	&--wallet {
-		justify-content: flex-start;
-		margin: 0 0 20px 0;
-
-		&:last-child {
-			margin: 0 0 0 0;
-		}
-	}
 	&__img {
 		flex: 0 0 28px;
 		margin: 0 12px 0 0;
@@ -135,6 +212,10 @@
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+
+	@media (max-width: $xs) {
+		margin: 50px 0 0 0;
+	}
 	&__logo-block {
 		display: flex;
 		align-items: center;

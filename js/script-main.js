@@ -12,7 +12,6 @@ $(document).ready(function () {
 
 			setInterval(function () {
 				$('#' + id)[0].click();
-				// $($(this).attr('data-index')).click();
 			}, 400);
 		});
 	}
