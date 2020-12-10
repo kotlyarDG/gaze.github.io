@@ -52,6 +52,11 @@
 	flex: 0 1 320px;
 	display: flex;
 	flex-direction: column;
+	transition: transform 0.5s ease 0s;
+
+	&:hover {
+		transform: scale(1.04);
+	}
 
 	@media (max-width: $md) {
 		margin: 0 0 0 0;
