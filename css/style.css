@@ -1717,7 +1717,7 @@ body {
 .business-radar__text-link-block {
   display: block;
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 25%;
   width: 50%;
   text-align: center;
@@ -1734,6 +1734,14 @@ body {
   .business-radar__text-link-block {
     width: 100%;
   }
+}
+
+.business-radar__lock-img {
+  margin: 0 0 19px 0;
+}
+
+.business-radar__lock-img img {
+  width: 72px;
 }
 
 .business-radar__text-link {
@@ -1825,6 +1833,15 @@ body {
         align-self: center;
     margin: 15px 0;
   }
+}
+
+.slide-business__image {
+  width: 100%;
+  margin: 38px 0;
+}
+
+.slide-business__image img {
+  max-width: 100%;
 }
 
 .slide-business__big-img {
