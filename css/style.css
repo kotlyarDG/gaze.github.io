@@ -1792,6 +1792,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 1px;
 }
 
 .slide-business__title {
@@ -1840,19 +1841,25 @@ body {
   margin: 38px 0;
 }
 
-.slide-business__image img {
-  max-width: 100%;
+.slide-business__image > img {
+  width: 100%;
 }
 
 .slide-business__image--pulse {
   position: relative;
   width: 626px;
+  max-width: 100%;
 }
 
 @media (max-width: 680px) {
   .slide-business__image--pulse {
     width: 100%;
   }
+}
+
+.slide-business__image--pulse img {
+  width: auto;
+  max-width: 100%;
 }
 
 .slide-business__image--pulse:before {
