@@ -122,6 +122,7 @@
 
 .item-card {
 	&__img {
+		max-width: 343px;
 		img {
 			max-width: 100%;
 		}

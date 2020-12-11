@@ -3178,6 +3178,10 @@ body {
   max-width: 100%;
 }
 
+.item-card__img {
+  max-width: 343px;
+}
+
 .item-card__img img {
   max-width: 100%;
 }
