@@ -2260,9 +2260,9 @@ body {
 }
 
 .images-case__column--sh {
-  max-height: 180px;
+  height: 180px;
   display: block;
-  overflow: hidden;
+  padding: 0 4px;
 }
 
 .images-case__column-small {
@@ -2345,6 +2345,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
+}
+
+.sh-img {
+  width: 100%;
+  height: 100%;
 }
 
 .promo-radar {

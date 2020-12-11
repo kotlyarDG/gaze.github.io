@@ -225,10 +225,11 @@
 		}
 
 		&--sh {
-			max-height: 180px;
+			height: 180px;
 			display: block;
+			padding: 0 4px;
 
-			overflow: hidden;
+			// overflow: hidden;
 		}
 	}
 
@@ -288,4 +289,9 @@
 			max-width: 100%;
 		}
 	}
+}
+
+.sh-img {
+	width: 100%;
+	height: 100%;
 }
