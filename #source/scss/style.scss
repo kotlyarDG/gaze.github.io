@@ -82,27 +82,51 @@ body {
 .popup {
 	&__wrapper {
 		background: #fff;
+		border-radius: 17px;
+
+		@media (max-width: 450px) {
+			max-width: 90%;
+		}
 	}
 
 	&__content {
-		padding: 31px 0 48px 0;
+		padding: 31px 66px 48px 66px;
+		max-width: 486px;
+		max-height: 90vh;
+		overflow-y: auto;
+
+		@media (max-width: 450px) {
+			padding: 31px 15px 48px 15px;
+		}
+	}
+
+	&__head {
+		padding: 0 0 0 0;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 25px 0;
 	}
 
 	&__form {
-		padding: 0 80px 0 65px;
+		padding: 0 10px;
 		position: relative;
+
+		&--second {
+			padding: 0;
+		}
 	}
 
 	&__input {
+		display: block;
 		height: 60px;
 		width: 100%;
-		margin: 0 0 28px 0;
+		margin: 0 auto 28px auto;
 		font-size: 15px;
 		line-height: 22px;
 		letter-spacing: -0.408px;
 
 		color: #3c3c43;
-		padding: 0 16px;
+		padding: 0 16px 0 0;
 		border-bottom: 1px solid rgba($color: #000, $alpha: 0.2);
 
 		&::placeholder {
@@ -116,25 +140,80 @@ body {
 		}
 	}
 
+	&__check {
+		margin: 16px 0 0 0;
+		font-size: 15px;
+		line-height: 21px;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 11px;
+			height: 11px;
+			border: 1px solid #721991;
+			margin-right: 11px;
+		}
+	}
+
+	&__check-input {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+
+		&:checked + label:before {
+			background-color: #721991;
+		}
+	}
+
 	&__btn {
 		display: block;
-		margin: 40px 0 0 auto;
-		background-color: #fff;
-		color: #1f2229;
-		border: 1px solid #1f2229;
+		margin: 40px -10px 0 -10px;
+		background-color: #721991;
+		color: #fff;
+		border: 1px solid #721991;
 		padding: 15px 30px;
 		border-radius: 20px;
 		font-size: 15px;
-		transition: 0.3s;
-
-		@media (max-width: 375px) {
-			margin: 60px 0 0 0;
-		}
+		transition: 0.4s;
+		width: calc(100% + 20px);
 
 		&:hover {
-			color: #711890;
-			border-color: #711890;
+			color: #721991;
+			background-color: #fff;
 		}
+
+		@media (max-width: 450px) {
+			margin: 40px 0 0 0;
+			width: 100%;
+		}
+
+		&--second {
+			margin: 40px 0 0 0;
+			width: 100%;
+		}
+	}
+
+	&__close {
+		cursor: pointer;
+		transform: translate(30px, 0);
+
+		@media (max-width: 450px) {
+			transform: none;
+		}
+	}
+
+	&__text {
+		margin: 0 0 11px 0;
+		font-size: 15px;
+		line-height: 18px;
+
+		color: #1f2229;
+	}
+
+	&__label {
+		font-size: 12px;
+		line-height: 15px;
+		color: #1f2229;
 	}
 }
 
