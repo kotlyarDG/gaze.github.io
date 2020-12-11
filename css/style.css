@@ -156,6 +156,11 @@ body {
   }
 }
 
+.popup__wrapper--rate {
+  background: #fff url("../images/system_img/wallet/bg-popup.svg") bottom left/contain no-repeat;
+  padding: 0 0 40px 0;
+}
+
 .popup__content {
   padding: 31px 66px 48px 66px;
   max-width: 486px;
@@ -178,6 +183,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 0 25px 0;
+}
+
+.popup__head--rates {
+  padding: 0 0 0 20px;
 }
 
 .popup__form {
@@ -317,6 +326,12 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #1f2229;
+}
+
+.popup-rate__text {
+  font-size: 15px;
+  line-height: 18px;
+  color: #131313;
 }
 
 .wrapper-main {
@@ -3440,7 +3455,7 @@ body {
 
 .rates-wallet {
   padding: 100px 0 25px 0;
-  background-color: #fff;
+  background: #fff url("../images/system_img/wallet/lines-2.svg") center/cover no-repeat;
 }
 
 .rates-wallet__wrapper {
@@ -3671,7 +3686,7 @@ body {
   content: url("../images/system_img/wallet/rates/x.svg");
   position: absolute;
   left: 0;
-  top: -5px;
+  top: -2px;
 }
 
 .item-rates__price {
@@ -3684,6 +3699,17 @@ body {
 
 .item-rates__price span {
   font-weight: bold;
+}
+
+.item-rates__link {
+  margin: 20px 0 0 0;
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #a245ca;
 }
 
 .item-rates__btn {

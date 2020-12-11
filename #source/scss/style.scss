@@ -87,6 +87,11 @@ body {
 		@media (max-width: 450px) {
 			max-width: 90%;
 		}
+
+		&--rate {
+			background: #fff url("../images/system_img/wallet/bg-popup.svg") bottom left / contain no-repeat;
+			padding: 0 0 40px 0;
+		}
 	}
 
 	&__content {
@@ -105,6 +110,10 @@ body {
 		display: flex;
 		justify-content: space-between;
 		margin: 0 0 25px 0;
+
+		&--rates {
+			padding: 0 0 0 20px;
+		}
 	}
 
 	&__form {
@@ -215,6 +224,12 @@ body {
 		line-height: 15px;
 		color: #1f2229;
 	}
+}
+
+.popup-rate__text {
+	font-size: 15px;
+	line-height: 18px;
+	color: #131313;
 }
 
 .wrapper-main {
