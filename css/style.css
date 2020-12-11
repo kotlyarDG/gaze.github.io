@@ -1844,6 +1844,74 @@ body {
   max-width: 100%;
 }
 
+.slide-business__image--pulse {
+  position: relative;
+  width: 626px;
+}
+
+@media (max-width: 680px) {
+  .slide-business__image--pulse {
+    width: 100%;
+  }
+}
+
+.slide-business__point {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-animation: pulse-business 2s infinite;
+          animation: pulse-business 2s infinite;
+}
+
+.slide-business__point-1 {
+  top: 61%;
+  left: 11.5%;
+}
+
+.slide-business__point-2 {
+  top: 55%;
+  left: 18%;
+}
+
+.slide-business__point-3 {
+  top: 54%;
+  left: 20%;
+}
+
+.slide-business__point-4 {
+  top: 52.5%;
+  left: 32%;
+}
+
+.slide-business__point-5 {
+  top: 49%;
+  left: 35%;
+}
+
+.slide-business__point-6 {
+  top: 65%;
+  left: 52%;
+}
+
+.slide-business__point-7 {
+  top: 68%;
+  left: 55.5%;
+}
+
+.slide-business__point-8 {
+  top: 45%;
+  left: 65%;
+}
+
+.slide-business__point-9 {
+  top: 50%;
+  left: 72%;
+}
+
+.slide-business__point-10 {
+  top: 59%;
+  left: 94%;
+}
+
 .slide-business__big-img {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 76%;
@@ -1882,6 +1950,36 @@ body {
   line-height: 22px;
   color: #ffffff;
   margin: 23px 0 0 0;
+}
+
+@-webkit-keyframes pulse-business {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(254, 254, 254, 0);
+            box-shadow: 0 0 0 0 rgba(254, 254, 254, 0);
+  }
+  60% {
+    -webkit-box-shadow: 0 0 0 4px rgba(254, 254, 254, 0.1);
+            box-shadow: 0 0 0 4px rgba(254, 254, 254, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(254, 254, 254, 0);
+            box-shadow: 0 0 0 0 rgba(254, 254, 254, 0);
+  }
+}
+
+@keyframes pulse-business {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(254, 254, 254, 0);
+            box-shadow: 0 0 0 0 rgba(254, 254, 254, 0);
+  }
+  60% {
+    -webkit-box-shadow: 0 0 0 4px rgba(254, 254, 254, 0.1);
+            box-shadow: 0 0 0 4px rgba(254, 254, 254, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(254, 254, 254, 0);
+            box-shadow: 0 0 0 0 rgba(254, 254, 254, 0);
+  }
 }
 
 .cases-radar {
