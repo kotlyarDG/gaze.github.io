@@ -33,22 +33,14 @@
 		margin: 0 0 35px 0;
 	}
 
-	&__content {
-	}
-
-	&__menu {
-	}
-
 	&__items {
 		padding: 72px 0 0 0;
 		position: relative;
+		min-height: 460px;
 
 		@media (max-width: $xs) {
 			padding: 40px 0 0 0;
 		}
-	}
-
-	&__item {
 	}
 
 	&__ellipse {
