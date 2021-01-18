@@ -184,7 +184,6 @@
 }
 
 .images-case {
-	// display: flex;
 	padding: 0 45px 0 0;
 	height: 461px;
 
@@ -204,14 +203,8 @@
 		padding: 0 0 0 0;
 	}
 
-	&--column {
-		flex-direction: column;
-	}
-
 	&__item {
 		position: relative;
-		// padding: 0 0 85% 0;
-		overflow: hidden;
 
 		img {
 			position: absolute;
@@ -230,85 +223,4 @@
 			grid-column-start: span 2;
 		}
 	}
-
-	&__column {
-		flex: 0 0 50%;
-		max-height: 350px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		img {
-			max-width: 100%;
-		}
-
-		&--sh {
-			height: 180px;
-			display: block;
-			padding: 0 4px;
-
-			// overflow: hidden;
-		}
-	}
-
-	&__column-small {
-		flex: 0 1 33.333%;
-
-		img {
-			max-width: 100%;
-		}
-	}
-
-	&__column-big {
-		flex: 0 1 66.667%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	&__row {
-		width: 100%;
-
-		img {
-			max-width: 100%;
-		}
-
-		&--t {
-			transform: translateY(-3px);
-		}
-
-		&--b {
-			transform: translateY(4px);
-		}
-
-		&--flex {
-			display: flex;
-		}
-	}
-
-	&__row-big {
-		flex: 0 1 66.667%;
-
-		img {
-			object-fit: cover;
-			max-width: 100%;
-		}
-	}
-
-	&__row-small {
-		flex: 0 1 33.333%;
-		display: flex;
-	}
-
-	&__img {
-		flex: 0 1 50%;
-
-		img {
-			object-fit: cover;
-			max-width: 100%;
-		}
-	}
-}
-
-.sh-img {
-	width: 100%;
-	height: 100%;
 }
