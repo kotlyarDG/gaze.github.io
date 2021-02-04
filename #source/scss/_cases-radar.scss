@@ -33,22 +33,14 @@
 		margin: 0 0 35px 0;
 	}
 
-	&__content {
-	}
-
-	&__menu {
-	}
-
 	&__items {
 		padding: 72px 0 0 0;
 		position: relative;
+		min-height: 460px;
 
 		@media (max-width: $xs) {
 			padding: 40px 0 0 0;
 		}
-	}
-
-	&__item {
 	}
 
 	&__ellipse {
@@ -144,9 +136,6 @@
 	&__images {
 		flex: 0 1 50%;
 		align-self: flex-start;
-
-		@media (max-width: $sm) {
-		}
 	}
 
 	&__body {
@@ -186,112 +175,44 @@
 	}
 }
 
-.ibg {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-}
-
-.ibg img {
-	width: 0;
-	height: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	visibility: hidden;
-}
-
 .images-case {
-	display: flex;
 	padding: 0 45px 0 0;
+	height: 461px;
+
+	display: grid;
+	grid-template-rows: 1.2fr 1fr;
+	grid-template-columns: 1.2fr 1fr;
+	gap: 10px;
+
+	&--three {
+		grid-template-rows: 1.9fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
 	@media (max-width: $sm) {
+		width: 100%;
+		height: calc(90vw / 1.5);
 		padding: 0 0 0 0;
 	}
 
-	&--column {
-		flex-direction: column;
-	}
-
-	&__column {
-		flex: 0 0 50%;
-		max-height: 350px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		img {
-			max-width: 100%;
-		}
-
-		&--sh {
-			height: 180px;
-			display: block;
-			padding: 0 4px;
-
-			// overflow: hidden;
-		}
-	}
-
-	&__column-small {
-		flex: 0 1 33.333%;
+	&__item {
+		position: relative;
 
 		img {
-			max-width: 100%;
-		}
-	}
-
-	&__column-big {
-		flex: 0 1 66.667%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	&__row {
-		width: 100%;
-
-		img {
-			max-width: 100%;
-		}
-
-		&--t {
-			transform: translateY(-3px);
-		}
-
-		&--b {
-			transform: translateY(4px);
-		}
-
-		&--flex {
-			display: flex;
-		}
-	}
-
-	&__row-big {
-		flex: 0 1 66.667%;
-
-		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 			object-fit: cover;
-			max-width: 100%;
+		}
+
+		&--big-vertical {
+			grid-row-start: span 2;
+		}
+
+		&--big-horizontal {
+			grid-column-start: span 2;
 		}
 	}
-
-	&__row-small {
-		flex: 0 1 33.333%;
-		display: flex;
-	}
-
-	&__img {
-		flex: 0 1 50%;
-
-		img {
-			object-fit: cover;
-			max-width: 100%;
-		}
-	}
-}
-
-.sh-img {
-	width: 100%;
-	height: 100%;
 }
