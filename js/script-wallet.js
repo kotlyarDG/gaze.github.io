@@ -142,4 +142,45 @@ $(document).ready(function () {
 		}
 	})();
 
+
+	$('.scale-rate__var--6').click(function () {
+		$('.scale-rate__var').removeClass('_active');
+		$('.scale-rate__var--6').addClass('_active');
+
+		$('.scale-rate__ball').css('left', '33%');
+		$('.scale-rate__line').css('width', '34%');
+	});
+
+	$('.scale-rate__var--9').click(function () {
+		$('.scale-rate__var').removeClass('_active');
+		$('.scale-rate__var--9').addClass('_active');
+
+		$('.scale-rate__ball').css('left', '64%');
+		$('.scale-rate__line').css('width', '65%');
+	});
+
+	$('.scale-rate__var--12').click(function () {
+		$('.scale-rate__var').removeClass('_active');
+		$('.scale-rate__var--12').addClass('_active');
+
+		$('.scale-rate__ball').css('left', '98%');
+		$('.scale-rate__line').css('width', '99%');
+	});
+
+	$('.scale-rate__var--3').click(function () {
+		$('.scale-rate__var').removeClass('_active');
+		$('.scale-rate__var--3').addClass('_active');
+
+		$('.scale-rate__ball').css('left', '0');
+		$('.scale-rate__line').css('width', '0');
+	});
+
+	$('.card-rate__hide-block').hide();
+
+	$('.card-rate__btn-start').click(function () {
+		$('.card-rate__hide-block').slideDown();
+		$('.card-rate__first-sum').hide();
+		$('.card-rate__btn-start').html('К оплате');
+	});
+
 });
