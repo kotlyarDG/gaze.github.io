@@ -73,9 +73,14 @@
 		margin: 30px 0 38px 0;
 		display: flex;
 		justify-content: space-between;
+
+		@media (max-width: 480px) {
+			// justify-content: flex-start;
+		}
 	}
 
 	&__menu-item {
+		flex: 0 1 33.333%;
 		font-weight: 600;
 		font-size: 15px;
 		line-height: 18px;
