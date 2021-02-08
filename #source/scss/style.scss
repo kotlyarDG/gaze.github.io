@@ -506,6 +506,14 @@ body {
 	}
 }
 
+.popup-video__content {
+	width: 560px;
+	height: 320px;
+	@media (max-width: 600px) {
+		width: 80vw;
+	}
+}
+
 // Подключение общих блоков
 @import "blocks";
 

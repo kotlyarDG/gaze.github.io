@@ -17,8 +17,10 @@ $(document).ready(function () {
 
 	AOS.init();
 
+
 	const popupLinks = document.querySelectorAll('.popup-link');
 	const body = document.querySelector('body');
+	const video = document.querySelector('.video-youtube');
 
 	let unlock = true;
 
@@ -69,6 +71,7 @@ $(document).ready(function () {
 		if (unlock) {
 			popupActive.classList.remove('open');
 			video.setAttribute('src', '');
+			video.setAttribute('src', 'https://www.youtube.com/embed/QiqMIK-iz2I');
 			if (doUnlock) {
 				bodyUnlock();
 			}
@@ -95,14 +98,14 @@ $(document).ready(function () {
 	}
 
 	function bodyUnlock() {
-		setTimeout(function () {
-			for (let index = 0; index < lockPadding.length; index++) {
-				const el = lockPadding[index];
-				el.style.paddingRight = '0px';
-			}
-			body.style.paddingRight = '0px';
-			// body.classList.remove('_lock');
-		}, timeout);
+		// setTimeout(function () {
+		// 	for (let index = 0; index < lockPadding.length; index++) {
+		// 		const el = lockPadding[index];
+		// 		el.style.paddingRight = '0px';
+		// 	}
+		// 	body.style.paddingRight = '0px';
+		// 	// body.classList.remove('_lock');
+		// }, timeout);
 
 		unlock = false;
 		setTimeout(function () {
@@ -142,38 +145,52 @@ $(document).ready(function () {
 		}
 	})();
 
+	let rateVar = $('.scale-rate__var');
+	let rateVar3 = $('.scale-rate__var--3');
+	let rateVar6 = $('.scale-rate__var--6');
+	let rateVar9 = $('.scale-rate__var--9');
+	let rateVar12 = $('.scale-rate__var--12');
+	let rateBall = $('.scale-rate__ball');
+	let rateLine = $('.scale-rate__line');
+	let rateSum = $('.card-rate__sum');
 
-	$('.scale-rate__var--6').click(function () {
-		$('.scale-rate__var').removeClass('_active');
-		$('.scale-rate__var--6').addClass('_active');
+	rateVar3.click(function () {
+		rateVar.removeClass('_active');
+		rateVar3.addClass('_active');
 
-		$('.scale-rate__ball').css('left', '33%');
-		$('.scale-rate__line').css('width', '34%');
+		rateBall.css('left', '0');
+		rateLine.css('width', '0');
+		rateSum.html('2970₽');
 	});
 
-	$('.scale-rate__var--9').click(function () {
-		$('.scale-rate__var').removeClass('_active');
-		$('.scale-rate__var--9').addClass('_active');
+	rateVar6.click(function () {
+		rateVar.removeClass('_active');
+		rateVar6.addClass('_active');
 
-		$('.scale-rate__ball').css('left', '64%');
-		$('.scale-rate__line').css('width', '65%');
+		rateBall.css('left', '33%');
+		rateLine.css('width', '34%');
+		rateSum.html('5940₽');
 	});
 
-	$('.scale-rate__var--12').click(function () {
-		$('.scale-rate__var').removeClass('_active');
-		$('.scale-rate__var--12').addClass('_active');
+	rateVar9.click(function () {
+		rateVar.removeClass('_active');
+		rateVar9.addClass('_active');
 
-		$('.scale-rate__ball').css('left', '98%');
-		$('.scale-rate__line').css('width', '99%');
+		rateBall.css('left', '64%');
+		rateLine.css('width', '65%');
+		rateSum.html('8910₽');
 	});
 
-	$('.scale-rate__var--3').click(function () {
-		$('.scale-rate__var').removeClass('_active');
-		$('.scale-rate__var--3').addClass('_active');
+	rateVar12.click(function () {
+		rateVar.removeClass('_active');
+		rateVar12.addClass('_active');
 
-		$('.scale-rate__ball').css('left', '0');
-		$('.scale-rate__line').css('width', '0');
+		rateBall.css('left', '98%');
+		rateLine.css('width', '99%');
+		rateSum.html('12880₽');
 	});
+
+
 
 	$('.card-rate__hide-block').hide();
 
