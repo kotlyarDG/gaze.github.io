@@ -153,6 +153,7 @@ $(document).ready(function () {
 	let rateBall = $('.scale-rate__ball');
 	let rateLine = $('.scale-rate__line');
 	let rateSum = $('.card-rate__sum');
+	let rateMonth = $('.card-rate__month');
 
 	rateVar3.click(function () {
 		rateVar.removeClass('_active');
@@ -161,6 +162,7 @@ $(document).ready(function () {
 		rateBall.css('left', '0');
 		rateLine.css('width', '0');
 		rateSum.html('2970₽');
+		rateMonth.html('3');
 	});
 
 	rateVar6.click(function () {
@@ -170,6 +172,8 @@ $(document).ready(function () {
 		rateBall.css('left', '33%');
 		rateLine.css('width', '34%');
 		rateSum.html('5940₽');
+		rateMonth.html('6');
+
 	});
 
 	rateVar9.click(function () {
@@ -179,6 +183,7 @@ $(document).ready(function () {
 		rateBall.css('left', '64%');
 		rateLine.css('width', '65%');
 		rateSum.html('8910₽');
+		rateMonth.html('9');
 	});
 
 	rateVar12.click(function () {
@@ -188,6 +193,7 @@ $(document).ready(function () {
 		rateBall.css('left', '98%');
 		rateLine.css('width', '99%');
 		rateSum.html('12880₽');
+		rateMonth.html('12');
 	});
 
 
