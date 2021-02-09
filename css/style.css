@@ -2693,6 +2693,18 @@ body {
   }
 }
 
+@media (min-height: 1360px) and (min-width: 991px) {
+  .first-wallet {
+    min-height: 50vh;
+  }
+}
+
+@media (min-width: 1800px) {
+  .first-wallet {
+    min-height: 100vh;
+  }
+}
+
 .first-wallet__wrapper {
   max-width: 1250px;
   margin: 0 auto;
@@ -2721,6 +2733,19 @@ body {
   }
 }
 
+@media (min-height: 1360px) and (min-width: 991px) {
+  .first-wallet__wrapper {
+    min-height: 50vh;
+  }
+}
+
+@media (min-width: 1800px) {
+  .first-wallet__wrapper {
+    max-width: 80%;
+    min-height: 100vh;
+  }
+}
+
 .first-wallet__logo img {
   max-width: 100%;
 }
@@ -2738,6 +2763,18 @@ body {
 @media (max-width: 991px) {
   .first-wallet__device {
     display: none;
+  }
+}
+
+@media (min-height: 1360px) and (min-width: 991px) {
+  .first-wallet__device {
+    top: 25%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .first-wallet__device {
+    top: 50%;
   }
 }
 

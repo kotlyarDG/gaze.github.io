@@ -6,6 +6,14 @@
 		min-height: auto;
 	}
 
+	@media (min-height: 1360px) and (min-width: $sm) {
+		min-height: 50vh;
+	}
+
+	@media (min-width: 1800px) {
+		min-height: 100vh;
+	}
+
 	&__wrapper {
 		max-width: 1250px;
 		margin: 0 auto;
@@ -26,6 +34,14 @@
 			padding: 45px 0 100px 0;
 			min-height: auto;
 		}
+		@media (min-height: 1360px) and (min-width: $sm) {
+			min-height: 50vh;
+		}
+
+		@media (min-width: 1800px) {
+			max-width: 80%;
+			min-height: 100vh;
+		}
 	}
 
 	&__logo {
@@ -44,6 +60,14 @@
 
 		@media (max-width: $sm) {
 			display: none;
+		}
+
+		@media (min-height: 1360px) and (min-width: $sm) {
+			top: 25%;
+		}
+
+		@media (min-width: 1800px) {
+			top: 50%;
 		}
 
 		img {
