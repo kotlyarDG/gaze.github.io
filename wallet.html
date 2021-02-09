@@ -14,6 +14,8 @@
 
 	<!-- Подключение CSS файлов -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -357,7 +359,7 @@
 						</div>
 						<div class="card-rate__hide-block">
 							<div class="card-rate__wrapper">
-								<div class="card-rate__scale scale-rate">
+								<!-- <div class="card-rate__scale scale-rate">
 									<div class="scale-rate__var scale-rate__var--3 _active"><span>3 мес.</span></div>
 									<div class="scale-rate__var scale-rate__var--6"><span>6 мес.</span></div>
 									<div class="scale-rate__var scale-rate__var--9"><span>9 мес.</span></div>
@@ -365,7 +367,15 @@
 
 									<div class="scale-rate__ball"></div>
 									<div class="scale-rate__line"></div>
+								</div> -->
+								<div class="absolute" style="position: relative; margin-bottom: 35px;">
+									<input type="text" class="js-range-slider" name="my_range" value="" />
+									<div class="scale-rate__var scale-rate__var--3 _active"><span>3 мес.</span></div>
+									<div class="scale-rate__var scale-rate__var--6"><span>6 мес.</span></div>
+									<div class="scale-rate__var scale-rate__var--9"><span>9 мес.</span></div>
+									<div class="scale-rate__var scale-rate__var--12"><span>12 мес.</span></div>
 								</div>
+
 								<p class="card-rate__ps">*свыше 5000 карт - индивидуальный подход к каждому клиенту</p>
 								<p class="card-rate__subtitle">Выбранный пакет:</p>
 								<div class="card-rate__item-quantity">
@@ -872,6 +882,7 @@
 	<!-- Jquery -->
 	<script src="js/jquery-3.5.0.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 
 	<!-- Main script file -->
 	<script src="js/script-wallet.js"></script>

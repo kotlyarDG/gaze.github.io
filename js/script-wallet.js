@@ -155,46 +155,46 @@ $(document).ready(function () {
 	let rateSum = $('.card-rate__sum');
 	let rateMonth = $('.card-rate__month');
 
-	rateVar3.click(function () {
-		rateVar.removeClass('_active');
-		rateVar3.addClass('_active');
+	// rateVar3.click(function () {
+	// 	rateVar.removeClass('_active');
+	// 	rateVar3.addClass('_active');
 
-		rateBall.css('left', '0');
-		rateLine.css('width', '0');
-		rateSum.html('2970₽');
-		rateMonth.html('3');
-	});
+	// 	rateBall.css('left', '0');
+	// 	rateLine.css('width', '0');
+	// 	rateSum.html('2970₽');
+	// 	rateMonth.html('3');
+	// });
 
-	rateVar6.click(function () {
-		rateVar.removeClass('_active');
-		rateVar6.addClass('_active');
+	// rateVar6.click(function () {
+	// 	rateVar.removeClass('_active');
+	// 	rateVar6.addClass('_active');
 
-		rateBall.css('left', '33%');
-		rateLine.css('width', '34%');
-		rateSum.html('5940₽');
-		rateMonth.html('6');
+	// 	rateBall.css('left', '33%');
+	// 	rateLine.css('width', '34%');
+	// 	rateSum.html('5940₽');
+	// 	rateMonth.html('6');
 
-	});
+	// });
 
-	rateVar9.click(function () {
-		rateVar.removeClass('_active');
-		rateVar9.addClass('_active');
+	// rateVar9.click(function () {
+	// 	rateVar.removeClass('_active');
+	// 	rateVar9.addClass('_active');
 
-		rateBall.css('left', '64%');
-		rateLine.css('width', '65%');
-		rateSum.html('8910₽');
-		rateMonth.html('9');
-	});
+	// 	rateBall.css('left', '64%');
+	// 	rateLine.css('width', '65%');
+	// 	rateSum.html('8910₽');
+	// 	rateMonth.html('9');
+	// });
 
-	rateVar12.click(function () {
-		rateVar.removeClass('_active');
-		rateVar12.addClass('_active');
+	// rateVar12.click(function () {
+	// 	rateVar.removeClass('_active');
+	// 	rateVar12.addClass('_active');
 
-		rateBall.css('left', '98%');
-		rateLine.css('width', '99%');
-		rateSum.html('12880₽');
-		rateMonth.html('12');
-	});
+	// 	rateBall.css('left', '98%');
+	// 	rateLine.css('width', '99%');
+	// 	rateSum.html('12880₽');
+	// 	rateMonth.html('12');
+	// });
 
 
 
@@ -206,4 +206,51 @@ $(document).ready(function () {
 		$('.card-rate__btn-start').html('К оплате');
 	});
 
+	var currentValue = 3;
+	function changeSum(month) {
+		if (month == 3) {
+			rateSum.html('2970₽');
+		}
+		if (month == 6) {
+			rateSum.html('5940₽');
+		}
+		if (month == 9) {
+			rateSum.html('8910₽');
+		}
+		if (month == 12) {
+			rateSum.html('12880₽');
+		}
+	}
+
+	$(".js-range-slider").ionRangeSlider({
+		skin: 'big',
+		min: 3,
+		max: 12,
+		from: 3,
+		to: 12,
+		grid: false,
+		step: 3,
+		onChange: function (data) {
+			console.log(data);
+			// var value = data.prop("from");
+			var value = data.from;
+			console.log(value);
+
+
+			if (value >= currentValue) {
+				$(`.scale-rate__var--${value}`).addClass('_active');
+				rateMonth.html(value);
+				changeSum(value);
+				currentValue = value;
+
+			}
+
+			if (value < currentValue) {
+				$(`.scale-rate__var--${currentValue}`).removeClass('_active');
+				rateMonth.html(value);
+				changeSum(value);
+				currentValue = value;
+			}
+		}
+	});
 });
