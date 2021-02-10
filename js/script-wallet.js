@@ -56,7 +56,7 @@ $(document).ready(function () {
 			if (popupActive) {
 				popupClose(popupActive, false);
 			} else {
-				bodyLock();
+				// bodyLock();
 			}
 			currentPopup.classList.add('open');
 			currentPopup.addEventListener('click', function (e) {
@@ -69,49 +69,54 @@ $(document).ready(function () {
 
 	function popupClose(popupActive, doUnlock = true) {
 		if (unlock) {
-			popupActive.classList.remove('open');
-			video.setAttribute('src', '');
-			video.setAttribute('src', 'https://www.youtube.com/embed/QiqMIK-iz2I');
-			if (doUnlock) {
-				bodyUnlock();
+			if (popupActive.classList.contains('popup-video')) {
+				video.setAttribute('src', '');
+				video.setAttribute('src', 'https://www.youtube.com/embed/QiqMIK-iz2I');
 			}
+			popupActive.classList.remove('open');
+
+			// if (doUnlock) {
+			// 	bodyUnlock();
+			// }
 		}
 	}
 
 
-	function bodyLock() {
-		// const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+	// function bodyLock() {
+	// 	// const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 
-		// if (lockPadding.length > 0) {
-		// 	for (let index = 0; index < lockPadding.length; index++) {
-		// 		const el = lockPadding[index];
-		// 		el.style.paddingRight = lockPaddingValue;
-		// 	}
-		// }
-		// body.style.paddingRight = lockPaddingValue;
-		// body.classList.add('_lock');
+	// 	// if (lockPadding.length > 0) {
+	// 	// 	for (let index = 0; index < lockPadding.length; index++) {
+	// 	// 		const el = lockPadding[index];
+	// 	// 		el.style.paddingRight = lockPaddingValue;
+	// 	// 	}
+	// 	// }
+	// 	// body.style.paddingRight = lockPaddingValue;
+	// 	// body.classList.add('_lock');
 
-		unlock = false;
-		setTimeout(function () {
-			unlock = true;
-		}, timeout);
-	}
+	// 	unlock = false;
+	// 	unlock = true;
+	// 	// setTimeout(function () {
+	// 	// 	unlock = true;
+	// 	// }, timeout);
+	// }
 
-	function bodyUnlock() {
-		// setTimeout(function () {
-		// 	for (let index = 0; index < lockPadding.length; index++) {
-		// 		const el = lockPadding[index];
-		// 		el.style.paddingRight = '0px';
-		// 	}
-		// 	body.style.paddingRight = '0px';
-		// 	// body.classList.remove('_lock');
-		// }, timeout);
+	// function bodyUnlock() {
+	// 	// setTimeout(function () {
+	// 	// 	for (let index = 0; index < lockPadding.length; index++) {
+	// 	// 		const el = lockPadding[index];
+	// 	// 		el.style.paddingRight = '0px';
+	// 	// 	}
+	// 	// 	body.style.paddingRight = '0px';
+	// 	// 	// body.classList.remove('_lock');
+	// 	// }, timeout);
 
-		unlock = false;
-		setTimeout(function () {
-			unlock = true;
-		}, timeout);
-	}
+	// 	unlock = false;
+	// 	unlock = true;
+	// 	// setTimeout(function () {
+	// 	// 	unlock = true;
+	// 	// }, timeout);
+	// }
 
 	document.addEventListener('keydown', function (e) {
 		if (e.which === 27) {
@@ -231,10 +236,7 @@ $(document).ready(function () {
 		grid: false,
 		step: 3,
 		onChange: function (data) {
-			console.log(data);
-			// var value = data.prop("from");
 			var value = data.from;
-			console.log(value);
 
 
 			if (value >= currentValue) {

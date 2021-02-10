@@ -512,6 +512,11 @@ body {
 	@media (max-width: 600px) {
 		width: 80vw;
 	}
+
+	@media (min-width: 1450px) {
+		width: 70vw;
+		height: 50vh;
+	}
 }
 
 // Подключение общих блоков

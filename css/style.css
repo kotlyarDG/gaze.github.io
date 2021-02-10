@@ -664,6 +664,13 @@ body {
   }
 }
 
+@media (min-width: 1450px) {
+  .popup-video__content {
+    width: 70vw;
+    height: 50vh;
+  }
+}
+
 .title {
   font-weight: bold;
   font-size: 28px;
@@ -2879,12 +2886,8 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
-  color: #300e5e;
-  background: -webkit-radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ececec 100%);
-  background: -o-radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ececec 100%);
-  background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ececec 100%);
-  -webkit-box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.25);
+  color: #2e0e5c;
+  background: #ffffff;
   border-radius: 8px;
   -webkit-transition: -webkit-transform 0.3s ease 0s;
   transition: -webkit-transform 0.3s ease 0s;
@@ -3679,8 +3682,8 @@ body {
 }
 
 .card-rate__info-item p {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 19px;
   color: #131313;
 }
 
@@ -3702,8 +3705,8 @@ body {
 }
 
 .card-rate__ps {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 19px;
   color: #131313;
   opacity: 0.5;
 }
@@ -4163,13 +4166,14 @@ body {
   margin: 15px 0 0 0;
   font-size: 15px;
   line-height: 18px;
-  color: #742797;
+  font-weight: 500;
+  color: #471382;
   padding: 10px 32px;
   background: -webkit-radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #efefef 100%);
   background: -o-radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #efefef 100%);
   background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #efefef 100%);
-  -webkit-box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   display: inline-block;
   -webkit-transition: -webkit-transform 0.3s ease 0s;
